@@ -47,10 +47,10 @@
               <a class="nav-link text-uppercase text-expanded" href="about.html">Despre</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="products.html">Planeta  Pamant</a>
+              <a class="nav-link text-uppercase text-expanded" href="pamant.html">Planeta  Pamant</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="store.html">Planeta Marte</a>
+              <a class="nav-link text-uppercase text-expanded" href="marte.html">Planeta Marte</a>
             </li>
           </ul>
         </div>
@@ -90,14 +90,97 @@
 
       </div>
 
+         <div class="col-lg-8 offset-lg-2">
+                         <br><br>
+                        <div class="biggest" >
+                        
+                            <div class="karambit" >
+                                 <button class="true btn btn-success" data-number="1" data-value="1" >Adevarat</button>
+                                  <div class="karambit1"> <p style="font-size:17px;">Sistemul este situat într-unul dintre brațele exterioare ale galaxiei Calea Lactee</p> </div>
+                                 <button class="true btn btn-danger" data-number="1" data-value="0" >Fals</button>
+                                  <div id="rezultat1"  style="width:30px; height:30px; border:1px solid black; border-radius: 10px; float:right; margin:5px 5px;"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="biggest">
+                            <div class="karambit">
+                                 <button class="true btn btn-success" data-number="2" data-value="0"  >Adevarat</button>
+                                  <div class="karambit1"> <p style="font-size:17px;">Calea Lactee are aproximativ 100 milioane de stele.</p> </div>
+                                 <button class="true btn btn-danger" data-number="2" data-value="1" >Fals</button>
+                                 <div id="rezultat2"   style="width:30px; height:30px; border:1px solid black; border-radius: 10px; float:right; margin:5px 5px;"></div>
+                            </div>
+                        </div>
+
+                        <div class="biggest">
+                            <div class="karambit">
+                                 <button class="true btn btn-success" data-number="3" data-value="1"  >Adevarat</button>
+                                  <div class="karambit1"> <p style="font-size:17px;"> Toate planetele au orbite aproape circulare dispuse într-un disc aproape plat numit plan ecliptic.</p> </div>
+                                 <button class="true btn btn-danger" data-number="3" data-value="0" >Fals</button>
+                                 <div id="rezultat3"   style="width:30px; height:30px; border:1px solid black; border-radius: 10px; float:right; margin:5px 5px;"></div>
+                            </div>
+                        </div>
+
+                        <div class="biggest">
+                            <div class="karambit">
+                                 <button class="true btn btn-success" data-number="4" data-value="1"  >Adevarat</button>
+                                  <div class="karambit1">  <p style="font-size:17px;">Componentul principal al sistemului solar este Soarele.</p> </div>
+                                 <button class="true btn btn-danger" data-number="4" data-value="0"  >Fals</button>
+                                 <div id="rezultat4"  style="width:30px; height:30px; border:1px solid black; border-radius: 10px; float:right; margin:5px 5px;"></div>
+                            </div>
+                        </div>
+
+                        <div class="biggest">
+                            <div class="karambit">
+                                 <button class="true btn btn-success" data-number="5" data-value="0"  >Adevarat</button>
+                                   <div class="karambit1"> <p style="font-size:17px;">Soarele este o stea de tip G1</p> </div>
+                                 <button class="true btn btn-danger" data-number="5" data-value="1" >Fals</button>
+                                 <div id="rezultat5"  style="width:30px; height:30px; border:1px solid black; border-radius: 10px; float:right; margin:5px 5px;"></div>
+                            </div>
+                        </div>
+
+                        
+
+                                                                      
+
+                   </div>
+
+
 
     </section>
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
         <p class="m-0 small">Copyright &copy; Ciudin Luiza Adelina</p>
+        <p class="m-0 small">Coordonatori: Prof. Runceanu Mihaela ; Prof. Vasile Titel</p>
       </div>
     </footer>
+
+
+    <script src="vendor/jquery/jquery.js"></script>
+ <script>
+
+    $(document).ready(function(){
+
+         
+        $(".true").bind('click',function(){
+            var q=$(this).attr("data-number");
+              if($(this).attr('data-value')=="0")
+              {
+                $("#rezultat"+q).css("background-image","url('css/images/bad.jpg')");
+              }
+              else
+              {
+                $("#rezultat"+q).css("background-image","url('css/images/good.jpg')");
+              }
+        });
+
+
+
+    });
+
+
+    </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

@@ -263,3 +263,21 @@ p {
 .font-weight-light {
   font-weight: 100 !important;
 }
+
+.karambit1{
+  display: inline-block;
+}
+
+.karambit1{
+  height:auto;
+  width:50%;
+  margin-left:10%;
+    
+    }
+
+    .biggest{
+margin: 20px auto;
+height: auto;
+width:100%;
+overflow: auto;
+}
